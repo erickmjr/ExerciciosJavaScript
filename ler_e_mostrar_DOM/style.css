@@ -1,0 +1,35 @@
+body{
+background-image: linear-gradient(to left,#3038706a, #4216b9 );
+}
+
+section{
+    background: black;
+    width: 300px;
+    height: fit-content;
+    border-radius: 10px;
+    margin: auto;
+}
+
+header{
+    color:black ;
+    text-align: center;
+}
+
+div{
+    text-align: center;
+}
+
+p{
+    display: inline-block;
+    margin: 10px
+}
+
+footer{
+    text-align: center;
+    font: italic;
+    color: black;
+}
+
+div#valores{
+    text-align: center;
+}

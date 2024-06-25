@@ -1,0 +1,38 @@
+body{
+        background-color: rgb(126, 118, 89);
+        font: normal 20pt Times;
+}
+
+header{
+    color: rgb(245, 240, 240);
+    text-align: center;
+}
+
+section{
+    background: black;
+    border-radius: 200px;
+    padding:20px;
+    width: 360px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.595);
+    text-align: center;
+    font: normal 18pt Times;
+}
+
+div{
+    text-align: center;
+    padding: 1px;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    
+}
+
+img{
+    border-radius: 60%;
+    width: 350px;
+    height: 300px;
+}

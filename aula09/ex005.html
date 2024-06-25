@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background: rgb(157, 157, 238);
+            color: white;
+            font: normal 18pt Times;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Iniciando estudos com DOM
+    </h1>
+    <p>Aqui vai o <strong>resultado</strong></p>
+    <p>Wassup BabyGirl</p>
+    <div id = 'msg'>clique em mim</div>
+    <div class="aviso">Sou uma Div de aviso</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        p1.style.color = 'blue'
+        window.document.write('Está escrito assim: ' + p1.innerText)
+        corpo.style.background = 'pink'
+        document.write(p1.innerText)
+        //window.alert(p1.innerHTML)
+        /*
+        var d = window.document.getElementById('msg')
+        d.style.background = 'purple'
+        d.innerText = 'Bora porra, aperta essa desgraça'
+        window.document.getElementById('msg').innerText = 'Ai droguinha'
+        
+        var d = window.document.getElementsByName('msg')[0]
+        window.document.getElementsByClassName('msg')[0] */
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'blue'
+        d.style.color = 'red'
+
+        var f = window.document.querySelector('div.aviso')
+        f.style.background = 'silver'
+        f.style.color = 'pink'
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        div#inicial{
+            background: pink;
+            font: Times white;
+            width: 175px;
+        }
+
+        div#res{
+            background: green;
+            font: Times white;
+            width: 330px;
+        }
+    </style>
+</head>
+<body>
+    <div id = "inicial">Em qual país você nasceu?</div>
+    <input type="text" name="nacionalidade" id="nacionalidade">
+    <input type="button" value="Verificar" onclick = 'verificar()'>
+    <div id = "res">
+
+    </div>
+    <script>
+        function verificar(){
+            var aux = document.querySelector('input#nacionalidade')
+            var nac = (aux.value)
+            if (nac.toUpperCase() == 'BRASIL'){
+                res.innerHTML = `Você nasceu no Brasil, portanto, não é estrangeiro.`
+            }
+            else{
+                res.innerHTML = `Você nasceu em ${nac}, portanto, é estrangeiro.`
+            }
+        }
+    </script>
+</body>
+</html>
